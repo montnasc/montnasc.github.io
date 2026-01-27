@@ -1,0 +1,9 @@
+title: "Mont Nasc"
+email: "matheus.monteiro_nasciment@leuphana.de"
+description: "Professional website for Mont Nasc — research, publications, teaching, news, contact."
+baseurl: ""
+url: "https://montnasc.github.io"
+theme: minima
+markdown: kramdown
+paginate: 5
+# If you later want automatic BibTeX rendering, we can add a build Action to enable jekyll-scholar or use client-side JS.
