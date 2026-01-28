@@ -3,7 +3,7 @@ email: "matheus.monteiro_nasciment@leuphana.de"
 description: "Professional website for Matheus Monteiro Nascimento — research, publications, teaching, news, contact."
 baseurl: ""
 url: "https://montnasc.github.io"
-theme: minimal
+theme: jekyll-theme-minimal
 markdown: kramdown
 paginate: 5
 # If you later want automatic BibTeX rendering, we can add a build Action to enable jekyll-scholar or use client-side JS.
