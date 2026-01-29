@@ -3,144 +3,130 @@ layout: default
 title: Publications
 ---
 
-<h1>Publications</h1>
+# Publications
 
-<div id="publications-list">
-  <!-- As publicações serão carregadas aqui -->
-  <p>Loading publications...</p>
-</div>
+## 2025
 
-<p><a href="/publications.bib" download>📥 Download complete bibliography (BibTeX)</a></p>
+**The iceberg of science identity: structural inequalities in science-related practices and dispositions**  
+*Monteiro Nascimento, Matheus & Markic, Silvija*  
+*International Journal of Science Education*, 1-18, 2025  
+DOI: [10.1080/09500693.2025.2517890](https://doi.org/10.1080/09500693.2025.2517890)
 
-<script>
-// Função para formatar autores
-function formatAuthors(authors) {
-  return authors
-    .replace(/ and /g, ', ')
-    .replace(/Monteiro Nascimento, Matheus/g, '<strong>Monteiro Nascimento, Matheus</strong>');
-}
+**Science capital and students’ achievement in science: a quantitative study using large-scale data**  
+*Moris, Carlos; Monteiro Nascimento, Matheus & Massi, Luciana*  
+*Educação em Foco* 28(56): 1-31, 2025  
+DOI: [10.36704/eef.v28i56.8641](https://doi.org/10.36704/eef.v28i56.8641)
 
-// Carrega e formata as publicações
-fetch('/assets/publications.bib')
-  .then(response => response.text())
-  .then(bibtex => {
-    const entries = [];
-    const blocks = bibtex.split('@');
-    
-    blocks.forEach(block => {
-      if (block.trim()) {
-        const lines = block.split('\n');
-        const firstLine = lines[0];
-        if (firstLine.includes('{')) {
-          const [type, id] = firstLine.split('{');
-          const entry = {
-            type: type.trim(),
-            id: id.replace(',', '').trim(),
-            year: '',
-            title: '',
-            author: '',
-            journal: '',
-            volume: '',
-            number: '',
-            pages: '',
-            doi: '',
-            url: ''
-          };
-          
-          lines.slice(1).forEach(line => {
-            const match = line.match(/\s*(\w+)\s*=\s*{([^}]+)}/);
-            if (match) {
-              const key = match[1];
-              const value = match[2];
-              entry[key] = value;
-            }
-          });
-          
-          // Extrai o ano de várias formas possíveis
-          if (entry.year) {
-            entry.year = entry.year.replace(/[{}]/g, '').trim();
-          }
-          
-          entries.push(entry);
-        }
-      }
-    });
-    
-    // Ordena por ano (mais recente primeiro)
-    entries.sort((a, b) => b.year - a.year);
-    
-    // Agrupa por ano
-    const byYear = {};
-    entries.forEach(entry => {
-      if (!byYear[entry.year]) byYear[entry.year] = [];
-      byYear[entry.year].push(entry);
-    });
-    
-    // Renderiza
-    const container = document.getElementById('publications-list');
-    let html = '';
-    
-    // Ordena anos decrescente
-    const years = Object.keys(byYear).sort((a, b) => b - a);
-    
-    years.forEach(year => {
-      html += `<h2>${year}</h2>`;
-      
-      byYear[year].forEach(pub => {
-        html += `
-        <div class="publication">
-          <p class="title"><strong>${pub.title || ''}</strong></p>
-          <p class="authors">${formatAuthors(pub.author || '')}</p>
-          <p class="journal">
-            ${pub.journal ? `<em>${pub.journal}</em>` : ''}
-            ${pub.volume ? `, ${pub.volume}` : ''}
-            ${pub.number ? `(${pub.number})` : ''}
-            ${pub.pages ? `: ${pub.pages}` : ''}
-            ${pub.year ? `, ${pub.year}` : ''}
-          </p>
-          ${pub.doi ? `<p class="doi">DOI: <a href="https://doi.org/${pub.doi}">${pub.doi}</a></p>` : ''}
-          ${pub.url ? `<p class="link"><a href="${pub.url}">🔗 Link</a></p>` : ''}
-        </div>
-        <hr>
-        `;
-      });
-    });
-    
-    container.innerHTML = html;
-  })
-  .catch(error => {
-    document.getElementById('publications-list').innerHTML = 
-      '<p>Error loading publications. Please try again later.</p>';
-    console.error('Error:', error);
-  });
-</script>
+**Análise estatística e pluriescalar das desigualdades educacionais: aspirações científicas e desempenho de estudantes no ENEM**  
+*Monteiro Nascimento, Matheus; Massi, Luciana; Moris, Carlos Henrique Aparecido Alves & Agostini, Gabriela*  
+*Sociologias* 27: e130399, 2025  
+DOI: [10.1590/1807-0337/e130399](https://doi.org/10.1590/1807-0337/e130399)
 
-<style>
-.publication {
-  margin: 1.5rem 0;
-  padding: 1rem 0;
-}
-.publication .title {
-  margin-bottom: 0.3rem;
-  font-size: 1.1rem;
-}
-.publication .authors {
-  margin: 0.2rem 0;
-  color: #555;
-  font-size: 0.95rem;
-}
-.publication .journal {
-  margin: 0.2rem 0;
-  color: #666;
-  font-size: 0.9rem;
-}
-.publication .doi, .publication .link {
-  margin: 0.2rem 0;
-  font-size: 0.85rem;
-}
-hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 1rem 0;
-}
-</style>
+**A estrutura interna do campo da Química no Brasil**  
+*Casellato, Fernando; Massi, Luciana & Monteiro Nascimento, Matheus*  
+*Química Nova*, 2025  
+DOI: [10.21577/0100-4042.20250071](https://doi.org/10.21577/0100-4042.20250071)
+
+**The National Education Plan (2014-2024) and the valorization of Physics teaching**  
+*Ostermann, Fernanda; Monteiro Nascimento, Matheus & Cavalcanti, Cláudio José De Holanda*  
+*Revista Educação e Políticas em Debate* 14(2): 1-22, 2025  
+DOI: [10.14393/REPOD-v14n2a2025-77629](https://doi.org/10.14393/REPOD-v14n2a2025-77629)
+
+**Comparison of proton and neutron cascades generated by proton beams in air, CO₂, and CH₄ environments**  
+*De Oliveira Deros, Marcos Antônio; Hoff, Gabriela; Monteiro Nascimento, Matheus; Pereira, Elisa Garcia & Pereira, Luis Gustavo*  
+*The European Physical Journal Plus* 140(4): 285, 2025  
+DOI: [10.1140/epjp/s13360-025-06195-2](https://doi.org/10.1140/epjp/s13360-025-06195-2)
+
+## 2024
+
+**From a Multicultural to Multinatural Science Education: Perspectives from an Amerindian Perspectivism for Post-pandemic Scenarios**  
+*Monteiro Nascimento, Matheus; Ferreira Dos Santos, Bruno & Moura, Cristiano B.*  
+In: *A Sociopolitical Turn in Science Education* (pp. 319-335). Springer Nature Switzerland, 2024  
+DOI: [10.1007/978-3-031-78586-3_17](https://doi.org/10.1007/978-3-031-78586-3_17)
+
+## 2023
+
+**ACM e o campo de Bourdieu: contribuições de pesquisas empíricas e estatísticas**  
+*Massi, Luciana; Moris, Carlos Henrique Aparecido Alves; Casellato, Fernando; Monteiro Nascimento, Matheus & Agostini, Gabriela*  
+*BIB - Revista Brasileira de Informação Bibliográfica em Ciências Sociais* 99, 2023  
+[Link](https://bibanpocs.emnuvens.com.br/revista/article/view/612)
+
+**Speech analysis under a Bakhtinian approach: Contributions to research on physics education**  
+*Ostermann, Fernanda; de H. Cavalcanti, Cláudio J.; Monteiro Nascimento, Matheus & Lima, Nathan W.*  
+*Physical Review Physics Education Research* 19(1): 010141, 2023  
+DOI: [10.1103/PhysRevPhysEducRes.19.010141](https://doi.org/10.1103/PhysRevPhysEducRes.19.010141)
+
+## 2022
+
+**Science education and the Bourdieu’s capital theory: a critical review of the science capital concept**  
+*Moris, Carlos Henrique Aparecido Alves; Massi, Luciana & Monteiro Nascimento, Matheus*  
+*Investigações em Ensino de Ciências* 27(1): 367, 2022  
+DOI: [10.22600/1518-8795.ienci2022v27n1p367](https://doi.org/10.22600/1518-8795.ienci2022v27n1p367)
+
+**Distinction and social classes in the access to higher education**  
+*Moris, Carlos Henrique Aparecido Alves; Casellato, Fernando; Monteiro Nascimento, Matheus; Agostini, Gabriela & Massi, Luciana*  
+*Tempo Social* 34(2): 69-91, 2022  
+DOI: [10.11606/0103-2070.ts.2022.189030](https://doi.org/10.11606/0103-2070.ts.2022.189030)
+
+**Socioeconomic profile of undergraduate Chemistry students: the case of UNESP-Araraquara courses**  
+*Agostini, Gabriela; Monteiro Nascimento, Matheus & Massi, Luciana*  
+*Química Nova*, 2022  
+DOI: [10.21577/0100-4042.20170887](https://doi.org/10.21577/0100-4042.20170887)
+
+**Not Only Why but Also How to Trust Science: Reshaping Science Education Based on Science Studies for a Better Post-pandemic World**  
+*Lima, Nathan Willig & Monteiro Nascimento, Matheus*  
+*Science & Education* 31(5): 1363-1382, 2022  
+DOI: [10.1007/s11191-021-00303-1](https://doi.org/10.1007/s11191-021-00303-1)
+
+## 2021
+
+**Epistemic and Political Confrontations Around the Public Policies to Fight COVID-19 Pandemic: What can Science Education learn from this episode?**  
+*Moura, Cristiano B.; Monteiro Nascimento, Matheus & Lima, Nathan Willig*  
+*Science & Education* 30(3): 501-525, 2021  
+DOI: [10.1007/s11191-021-00193-3](https://doi.org/10.1007/s11191-021-00193-3)
+
+**Origem social e escolha pelo curso de graduação: inferências a partir de dados do ENADE**  
+*Monteiro Nascimento, Matheus & Massi, Luciana*  
+*Revista NUPEM* 13(28): 105-120, 2021  
+DOI: [10.33871/nupem.2021.13.28.105-120](https://doi.org/10.33871/nupem.2021.13.28.105-120)
+
+**Bourdieu's Field Theory and Science Education: Possible Articulations and Appropriations**  
+*Massi, Luciana; Agostini, Gabriela & Monteiro Nascimento, Matheus*  
+*Revista Brasileira de Pesquisa em Educação em Ciências* 21: e33830, 2021  
+DOI: [10.28976/1984-2686rbpec2021u413439](https://doi.org/10.28976/1984-2686rbpec2021u413439)
+
+## 2019
+
+**Political culture, school performance and Science Education: an empirical study under Pierre Bourdieu's theory**  
+*Monteiro Nascimento, Matheus; Lima, Nathan Willig; Cavalcanti, Cláudio José De Holanda & Ostermann, Fernanda*  
+*Ciência & Educação (Bauru)* 25(2): 431-447, 2019  
+DOI: [10.1590/1516-731320190020010](https://doi.org/10.1590/1516-731320190020010)
+
+**Interpretative Quantitative Methods in Science Education: Approaches to Multivariate Data Analysis**  
+*Monteiro Nascimento, Matheus; Antunes Júnior, Estevão; Cavalcanti, Cláudio & Ostermann, Fernanda*  
+*Revista Brasileira de Pesquisa em Educação em Ciências* 19: 775-800, 2019  
+DOI: [10.28976/1984-2686rbpec2019u775800](https://doi.org/10.28976/1984-2686rbpec2019u775800)
+
+## 2018
+
+**A pursuit for physics item from ENEM less associated with socioeconomic status**  
+*Monteiro Nascimento, Matheus; Cavalcanti, Cláudio & Ostermann, Fernanda*  
+*Revista Brasileira de Ensino de Física* 40(3), 2018  
+DOI: [10.1590/1806-9126-rbef-2017-0237](https://doi.org/10.1590/1806-9126-rbef-2017-0237)
+
+**A falácia da culpabilização do professor pelo fracasso escolar**  
+*Cavalcanti, Cláudio; Monteiro Nascimento, Matheus & Ostermann, Fernanda*  
+*Revista Thema* 15(3): 1064-1088, 2018  
+DOI: [10.15536/thema.15.2018.1064-1088.1059](https://doi.org/10.15536/thema.15.2018.1064-1088.1059)
+
+## 2017
+
+**Correspondence Analysis applied to Science Education research**  
+*Monteiro Nascimento, Matheus; Cavalcanti, Cláudio & Ostermann, Fernanda*  
+*Enseñanza de las Ciencias: revista de investigación y experiencias didácticas* (Extra), 2017  
+[Link](https://raco.cat/index.php/Ensenanza/article/view/336901)
+
+---
+
+### Download
+[📥 Complete bibliography in BibTeX format](/publications.bib)
