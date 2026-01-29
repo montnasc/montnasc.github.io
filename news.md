@@ -1,4 +1,7 @@
 ---
+layout: default
+title: News
+---
 # News
 
 Latest announcements:
