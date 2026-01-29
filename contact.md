@@ -1,4 +1,7 @@
 ---
+layout: default
+title: Contact
+---
 # Contact
 
 Adresse: Leuphana University of Lüneburg
