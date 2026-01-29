@@ -1,6 +1,17 @@
 ---
 # Contact
 
+Adresse: Leuphana University of Lüneburg
+Institute of Sustainable Chemistry | Science Education
+Universitätsallee 1, C13.320
+21335 Lüneburg
+
 Email: matheus.monteiro_nascimento@leuphana.de
 
-You can also add a contact form via a third-party service (Formspree, Netlify Forms) or show links to LinkedIn / ORCID.
+Homepage Leuphana: https://www.leuphana.de/en/institutes/insc/persons/matheus-nascimento.html
+
+ORCID: https://orcid.org/0000-0001-8179-5391
+
+Researchgate: https://www.researchgate.net/profile/Matheus-Nascimento-8
+
+Github: https://github.com/montnasc
