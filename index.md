@@ -226,8 +226,3 @@ Welcome — I am a Postdoctoral Research Associate in the Institute of Sustainab
   }
 }
 </style>
-  .news-preview-title {
-    font-size: 1.1rem;
-  }
-}
-</style>
