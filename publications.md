@@ -1,4 +1,8 @@
 ---
+layout: default
+title: Publications
+bibliography: publications.bib
+---
 # Publications
 
 Monteiro Nascimento, M., & Markic, S. (2025). The iceberg of science identity: structural inequalities in science-related practices and dispositions. International Journal of Science Education, 1-18.
