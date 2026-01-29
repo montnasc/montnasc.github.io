@@ -6,7 +6,7 @@ title: Teaching
 
 **Winter semester 25/26**
 
-**Becoming a Scientist: Identity, Privilege and Barriers**
+**Seminar: Becoming a Scientist: Identity, Privilege and Barriers**
 
 Tags: Gender Diversity Certificate
 
@@ -19,7 +19,7 @@ Objective:
 - Develop critical perspectives on how science education and institutions can support more inclusive identities in science.
 
 
-**Social justice and education: Challenges and possibilities**
+**Seminar: Social justice and education: Challenges and possibilities**
 
 Tags: Profile study inclusion and diversity
 
