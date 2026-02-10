@@ -181,12 +181,54 @@ title: News
 }
 
 .post-image {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
+  text-align: center;
 }
 
 .post-image img {
-  width: 100%;
+  /* Tamanho controlado */
+  max-width: 100%;
+  height: auto;
+  
+  /* Limita a altura máxima */
+  max-height: 500px;
+  
+  /* Mantém a proporção e centraliza */
+  object-fit: contain;
+  object-position: center;
+  
+  /* Estilo visual */
   border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
+  /* Centralização */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsividade - ajusta altura para diferentes telas */
+@media (max-width: 768px) {
+  .post-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-image img {
+    max-height: 300px;
+  }
+}
+
+/* Adicione também este estilo para imagens dentro do conteúdo do post */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1.5rem auto;
+  display: block;
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .image-caption {
