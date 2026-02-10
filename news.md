@@ -75,7 +75,7 @@ title: News
 }
 
 .news-image {
-  height: 200px;
+  height: 100px;
   overflow: hidden;
 }
 
