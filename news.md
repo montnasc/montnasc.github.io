@@ -186,25 +186,10 @@ title: News
 }
 
 .post-image img {
-  /* Tamanho controlado */
-  max-width: 50%;
-  height: auto;
-  
-  /* Limita a altura máxima */
-  max-height: 200px;
-  
-  /* Mantém a proporção e centraliza */
+  width: 100%;
+  max-height: 70vh; /* 70% da altura da tela */
   object-fit: contain;
-  object-position: center;
-  
-  /* Estilo visual */
   border-radius: 8px;
-  border: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  
-  /* Centralização */
-  display: block;
-  margin: 0 auto;
 }
 
 /* Responsividade - ajusta altura para diferentes telas */
