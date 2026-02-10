@@ -207,12 +207,12 @@ title: News
 
 /* Adicione também este estilo para imagens dentro do conteúdo do post */
 .post-content img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 6px;
   margin: 1.5rem auto;
   display: block;
-  max-height: 400px;
+  max-height: 200px;
   object-fit: contain;
 }
 
