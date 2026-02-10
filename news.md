@@ -75,13 +75,13 @@ title: News
 }
 
 .news-image {
-  height: 100px;
+  height: 200px;
   overflow: hidden;
 }
 
 .news-image img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -185,7 +185,7 @@ title: News
 }
 
 .post-image img {
-  width: 50%;
+  width: 100%;
   border-radius: 8px;
 }
 
