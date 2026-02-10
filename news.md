@@ -185,7 +185,7 @@ title: News
 }
 
 .post-image img {
-  width: 100%;
+  width: 500%;
   border-radius: 8px;
 }
 
