@@ -187,11 +187,11 @@ title: News
 
 .post-image img {
   /* Tamanho controlado */
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   
   /* Limita a altura máxima */
-  max-height: 500px;
+  max-height: 200px;
   
   /* Mantém a proporção e centraliza */
   object-fit: contain;
