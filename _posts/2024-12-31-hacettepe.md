@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Visiting Scholar at Hacettepe University, Ankara, Türkey"
-date: 2024-08-01
+date: 2024-12-31
 excerpt: "Starting as a Visiting scholar at Hacettepe Universisty."
 image: /assets/images/hacettepe.png  # ou qualquer imagem relevante
 categories: [news]
