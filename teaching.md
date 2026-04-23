@@ -4,7 +4,7 @@ title: Teaching
 ---
 # Teaching
 
-**Summer semester 26**
+**==> Summer semester 26 <==**
 
 **Seminar: Becoming a Scientist: Identity, Privilege and Barriers**
 
@@ -34,7 +34,7 @@ Students will be able to:
 
 
 
-**Winter semester 25/26**
+**==> Winter semester 25/26 <==**
 
 **Seminar: Becoming a Scientist: Identity, Privilege and Barriers**
 
