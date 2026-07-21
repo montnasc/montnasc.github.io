@@ -7,9 +7,9 @@ title: Publications
 
 *Selected papers (complete list available via BibTeX download)*
 
-**Prompt‐a‐Scientist: Using Generative AI to Disrupt Stereotypical Conceptions in Science Education**
-*Monteiro Nascimento, M., & Abels, Simone*
-*School Science and Mathematics*, 1–6. 2026
+**Prompt‐a‐Scientist: Using Generative AI to Disrupt Stereotypical Conceptions in Science Education**  
+*Monteiro Nascimento, Matheus & Abels, Simone*  
+*School Science and Mathematics*, 1-6, 2026  
 DOI: [10.1111/ssm.70041](https://doi.org/10.1111/ssm.70041)
 
 **The iceberg of science identity: structural inequalities in science-related practices and dispositions**  
