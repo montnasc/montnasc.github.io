@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New Paper Published in School Science and Mathematics"
-date: 2025-06-26
+date: 2026-06-26
 excerpt: "Our paper 'Prompt‐a‐Scientist' has been published."
 image: /assets/images/ai_paper.png
 categories: [news]
